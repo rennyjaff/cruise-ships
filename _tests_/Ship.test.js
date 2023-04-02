@@ -12,5 +12,14 @@ describe("Ship", () => {
         expect(ship.startingPort).toBe("Dover");
         expect(QE2.startingPort).toBe("Belfast");
     })
+    it("can set sail", () => {
+        const ship = new Ship("Dover");
+
+        ship.setSail();
+
+        expect(ship.startingPort).toBeFalsy();
+    }
+    )
+
 });
 
