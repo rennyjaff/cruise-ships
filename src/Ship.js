@@ -7,6 +7,9 @@ class Ship {
     setSail() {
     return this.currentPort;
     }
+    dock(port) {
+        this.currentPort = port;
+    }
 };
 
 
